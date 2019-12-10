@@ -2,6 +2,8 @@
 
 > _This ui change is incomplete._
 
+🤩Star if you like it!🤩
+
 ![Screen shot](https://raw.githubusercontent.com/lowzhao/better_jupyter_notebook/master/Screenshot.png)
 
 just: 
