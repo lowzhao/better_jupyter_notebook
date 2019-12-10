@@ -8,7 +8,7 @@ just:
 ```
 git clone https://github.com/lowzhao/better_jupyter_notebook.git;
 cd better_jupyter_notebook;
-mkdir ~/.jupyter/custom;
+mkdir -p ~/.jupyter/custom;
 cp -i ./custom.css ~/.jupyter/custom;
 jupyter notebook;
 ```
