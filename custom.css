@@ -1,0 +1,348 @@
+.CodeMirror pre {
+    font-family: "Fira Code";
+    font-size: 9pt;
+}
+
+div.output pre{
+    font-family: "Fira Code";
+    font-size: 9pt;
+}
+
+div.output_html td{
+    font-family: "Fira Code";
+    font-size: 8pt;
+}
+
+div.prompt{
+    font-family: "Fira Code";
+    font-size: 8pt;
+}
+
+div.completions select{
+    font-family: "Fira Code";
+    font-size: 9pt;
+}
+
+div.container pre{
+    font-family: "Fira Code";
+    font-size: 9pt;
+}
+
+div.tooltiptext pre{
+    font-family: "Fira Code";
+    font-size: 8pt;
+}
+
+div.input_area {
+    border-color: rgba(0,0,0,0.10);
+    background: rbga(0,0,0,0.5);
+}
+
+div.text_cell_render {
+    font-family: lato;
+    font-size: 11pt;
+    line-height: 145%; /* added for some line spacing of text. */
+}
+
+div.text_cell_render code{
+    font-family: "Fira Code";
+    font-size: 9pt;
+}
+
+div.text_cell_render h1,
+div.text_cell_render h2,
+div.text_cell_render h3,
+div.text_cell_render h4,
+div.text_cell_render h5,
+div.text_cell_render h6 {
+    font-family: lato, 'HelveticaNeue-Light';
+    font-weight: 300;
+}
+
+div.text_cell_render h1 {
+    font-size: 24pt;
+}
+
+div.text_cell_render h2 {
+    font-size: 18pt;
+}
+
+div.text_cell_render h3 {
+    font-size: 14pt;
+}
+
+.rendered_html pre,
+.rendered_html code {
+    font-size: medium;
+}
+
+.rendered_html ol {
+    list-style:decimal;
+    margin: 1em 2em;
+}
+
+.prompt.input_prompt {
+    color: rgba(0,0,0,0.5);
+}
+
+.cell.command_mode.selected {
+    border-color: rgba(0,0,0,0.1);
+}
+
+.cell.edit_mode.selected {
+    border-color: rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px #f0f0f0;
+    -webkit-box-shadow: 0px 0px 5px #f0f0f0;
+}
+
+div.output_scroll {
+    -webkit-box-shadow: inset 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 2px;
+}
+
+#menubar .navbar-inner {
+    background: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    font-family: lato;
+    font-weight: 400;
+}
+
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+}
+
+div#notebook_panel {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-top: none;
+}
+
+div#notebook {
+    border-top: 1px solid rgba(0,0,0,0.15);
+}
+
+#menubar .navbar .navbar-inner,
+.toolbar-inner {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#checkpoint_status,
+#autosave_status {
+    color: rgba(0,0,0,0.5);
+}
+
+#header {
+    font-family: "Fira Code";
+    color:white;
+}
+
+body > #header #header-container{
+    /* display:flex; */
+    padding:10px;
+}
+#ipython_notebook{
+    order:2;
+    display:flex;
+    align-items: center;
+}
+#ipython_notebook > a > img{
+    display: none;
+    order: 2;
+}
+#ipython_notebook > a::after{
+    content: 'Home';
+    
+    background: none;
+    border-radius: 5px;
+    color: white;
+}
+#ipython_notebook > a:hover{
+    border: 2px solid white;
+
+    margin-left:0px;
+    margin-right:0px;
+    text-decoration: none !important;
+}
+#ipython_notebook > a{
+
+    border-radius: 5px;
+    padding: 8px;
+    margin-left:2px;
+    margin-right:2px;
+    text-decoration: none;
+}
+#save_widget{
+    display:flex;
+    justify-content: space-between;
+}
+#save_widget #notebook_name{
+    line-height:normal;
+    font-weight: 500;
+}
+#save_widget #notebook_name:hover{
+    background:none;
+    text-decoration: underline white;
+}
+#save_widget .checkpoint_status{
+    font-size: 10px;
+    display: inline-block;
+    font-style: italic;
+    padding: 0 0px;
+}
+#save_widget .autosave_status{
+    display:none;
+}
+.current_kernel_logo{
+    display: none !important;
+}
+#logout{
+    display:none;
+}
+
+
+#notebook_name {
+    font-weight: 200;
+}
+
+#notebook_list_header {
+    background: #101010
+}
+/* .list_item{
+    background: #111111;
+    padding:3px 0px;
+    width:200px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    color:white;
+} */
+/* .list_item .item_link{
+    color:white;
+} */
+.list_item:hover, .list_item:hover .item_link{
+    color:black;
+    background:white;
+}
+#shutdown{
+    background: none;
+    border-radius: 5px;
+    margin: 6px;
+    color: white;
+}
+body > #header{
+    background:#222222;
+}
+.dropdown-menu {
+    background:#222222;
+    color: white;
+    opacity:0;
+    transition: ease 0.4s;
+}
+.dropdown-menu > li > a,.dropdown-menu > li > a::after {
+    color:white;
+    overflow:hidden;
+    transition: ease 0.4s;
+    /* opacity: 0; */
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+    background:none;
+    color:white;
+}
+.dropdown:hover > a, .dropdown:hover > .dropdown-menu,.dropdown-submenu:hover > .dropdown-menu{
+    /* opacity: 1; */
+    display:block;
+    color:white;
+
+    opacity: 0.95;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+    color:#BBB;
+}
+.dropdown-toggle:hover + .dropdown-menu{
+    display:block;
+    color:white;
+}
+.dropdown-menu:hover{
+    display:block;
+    color:white;
+}
+.navbar-default .navbar-nav > li > a, .kernel_idle_icon:before, .command_mode .modal_indicator:before, #modal_indicator{
+    color:white;
+}
+#menubar{
+    z-index: 10000;
+}
+#maintoolbar{
+    margin-top:0px;
+}
+#notification_trusted{
+    display:none !important;
+}
+.kernel_indicator_name{
+    display:none;
+}
+#kernel_indicator{
+    border-left: none;
+}
+#menus{
+    background:none;
+    border:none;
+}
+body > #header > .header-bar{
+    display:none;
+}
+#save-notbook, #cmd_palette, .toolbar-btn-label{
+    display:none;
+}
+
+.btn-default
+{
+    background:none;
+    border-color:transparent;
+    color:white;
+}
+.btn-default:hover{
+    border-color: white;
+}
+
+#cell_type, #cell_type > option{
+    background:none;
+    color:white;
+}
+#notebook, #notebook-container{
+    background:#292929;
+}
+.prompt.input_prompt{
+    min-width: auto;
+     width:100px;
+}
+div.prompt{
+    min-width: auto;
+    /* width:100px; */
+}
+div.cell{
+    background:white;
+    margin-bottom:10px;
+}
+div.cell .prompt_container{
+    /* display:none; */
+    /* cannot know if it is runned */
+}
+div.cell.running {
+    background-color:yellow;
+}
+div.input{
+    /* display:flex;
+    flex-direction: column; */
+}
+div.cell:has(pre.CodeMirror-line-like){
+    background-color:yellow;
+}
