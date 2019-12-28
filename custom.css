@@ -147,6 +147,7 @@ div#notebook {
 body > #header #header-container{
     /* display:flex; */
     padding:10px;
+    align-items: center;
 }
 #ipython_notebook{
     order:2;
@@ -213,29 +214,87 @@ body > #header #header-container{
 }
 
 #notebook_list_header {
-    background: #101010
+    background: transparent;
 }
-/* .list_item{
-    background: #111111;
+
+	#site{
+    background: #292929;
+}
+.list_item{
+    position: relative;
+    transition: ease 0.2s;
     padding:3px 0px;
-    width:200px;
-    height: 90px;
+    height: 50px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     color:white;
-} */
-/* .list_item .item_link{
+    font-family: "Fira Code";
+    font-size:15px;
+}
+.list_item > div .item_link{
+    transition: ease 0.5s;
+    margin-left: 10px;
+}
+.list_item > div input{
+    vertical-align: middle;
+    margin-top:0px;
+    
+}
+.list_item .item_link{
+    transition: ease 0.5s;
+    margin-left: 10px;
+}
+.list_item .col-md-12{
+    /* display:flex;
+    align-items: center; */
+    flex-wrap: none;
+}
+.list_item .item_icon{
+    /* width:40px; */
+    /* height: 40px; */
+    font-size: 20px;
+    /* position: relative; */
+    /* top: 50%; */
+    vertical-align: middle;
+}
+.list_item .item_link{
     color:white;
-} */
-.list_item:hover, .list_item:hover .item_link{
+    margin-left: 10px;
+}
+.list_item:hover {
     color:black;
     background:white;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 1px white;
+}
+.list_item:hover .item_link{
+    color:black;
+}
+.list_item:hover .item_link:hover{
+    text-decoration: solid;
+    text-decoration-color: black;
+    text-decoration-line: underline;
+}
+
+
+.list_item:hover .item_link{
+    color:black;
+}
+.list_item:hover .item_link:hover{
+    text-decoration: solid;
+    text-decoration-color: black;
+    text-decoration-line: underline;
 }
 #shutdown{
     background: none;
     border-radius: 5px;
     margin: 6px;
     color: white;
+    font-size: 16px;
+    border-color: transparent;
+    border-width: 2px;
 }
 body > #header{
     background:#222222;
@@ -309,8 +368,10 @@ body > #header > .header-bar{
     border-color:transparent;
     color:white;
 }
-.btn-default:hover{
+.btn-default:hover, #shutdown:hover{
     border-color: white;
+    background: transparent;
+    color:white;
 }
 
 #cell_type, #cell_type > option{
@@ -345,4 +406,67 @@ div.input{
 }
 div.cell:has(pre.CodeMirror-line-like){
     background-color:yellow;
+}
+
+
+#notebook_list > div > div > div > div.item_buttons.pull-left{
+    display: none;
+}
+#tabs > li:nth-child(2) > a::before{
+    content: '\f02d';
+    font-family: FontAwesome;
+    padding-right:10px;
+}
+#tabs > li:nth-child(1) > a::before{
+    content: '\f07b';
+    font-family: FontAwesome;
+    padding-right:10px;
+}
+#tabs > li:nth-child(3){
+    display:none;
+}
+.item_buttons.pull-left{
+    /* margin-left: 10px; */
+}
+#tabs > li > a{
+    /* border-top-left-radius:10px;
+    border-top-right-radius:10px; */
+    background:transparent;
+    color:#BBBBBB;
+    font-size:17px;
+    padding:10px 20px;
+    border-radius:5px;
+    border-color:transparent;
+}
+#tabs  li.active {
+    
+    border-bottom-color:white;
+    border-bottom:1px solid white;
+}
+#tabs li.active > a{
+    color:white;
+}
+.nav-tabs{
+    border-bottom:transparent;
+}
+#new-buttons.open #new-menu{
+    opacity: 1;
+}
+#new-buttons #new-menu .dropdown-header{
+    display:none;
+}
+#new-buttons:hover #new-menu,#new-buttons #new-menu:hover{
+    opacity: 1;
+}
+#new-dropdown-button{
+    margin: -1px;
+}
+#notebook_toolbar > div.col-sm-8.no-padding > div.dynamic-instructions{
+    display:none !important; 
+}
+.panel.panel-default{
+    background: transparent;
+}
+.list_container > div {
+    border-bottom: none;
 }
